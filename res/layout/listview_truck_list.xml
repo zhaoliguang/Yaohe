@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    android:background="#DDDAC4"
+    tools:context=".CustomerMapActivity" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/select_common_list" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="核载:"
+            android:textColor="#8E8A6F"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/truck_list_listview_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="10吨"
+            android:textColor="#0095ea"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车长:"
+            android:layout_toRightOf="@+id/truck_list_listview_weight"
+            android:layout_marginLeft="10dp"
+            android:textColor="#8E8A6F"
+            android:textSize="19sp" />
+        
+        <TextView
+            android:id="@+id/truck_list_listview_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10米"
+            android:layout_toRightOf="@+id/textView2"
+            android:textColor="#0095ea"
+            android:textSize="19sp" />
+        
+         <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="车宽:"
+            android:layout_toRightOf="@+id/truck_list_listview_length"
+            android:textColor="#8E8A6F"
+            android:textSize="19sp" />
+        
+        <TextView
+            android:id="@+id/truck_list_listview_width"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03米"
+            android:layout_toRightOf="@+id/textView3"
+            android:textColor="#0095ea"
+            android:textSize="19sp" />
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/truck_list_listview_width"
+            android:background="@drawable/icon_details" />
+
+    </RelativeLayout>
+
+</LinearLayout>

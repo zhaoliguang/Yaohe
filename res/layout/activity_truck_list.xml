@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDAC4"
+    tools:context=".TruckListActivity" >
+
+    <RelativeLayout
+        android:id="@+id/truck_list_relative1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/all_title_height"
+        android:layout_alignParentTop="true" >
+
+        <Button
+            android:id="@+id/truck_list_btn_back"
+            android:layout_width="@dimen/all_title_back_width"
+            android:layout_height="@dimen/all_title_height"
+            android:layout_centerVertical="true"
+            android:background="@drawable/select_common_btn_back"
+            android:onClick="back"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/all_title_height"
+            android:layout_toRightOf="@+id/truck_list_btn_back"
+            android:background="@drawable/icon_back_truck_list_title" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/truck_list_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/truck_list_relative1"
+        android:divider="#DDDAC4"
+        android:dividerHeight="5dp" >
+    </ListView>
+
+</RelativeLayout>

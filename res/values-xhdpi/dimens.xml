@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- 首页卡车图标长度和宽度 -->
+    <dimen name="main_btn_truck_width">100dp</dimen>
+    <dimen name="main_btn_truck_height">138dp</dimen>
+    
+    <!-- 首页顾客图标长度和宽度 -->
+    <dimen name="main_btn_customer_width">100dp</dimen>
+    <dimen name="main_btn_customer_height">138dp</dimen>
+    
+    <!-- 所有title栏的高度 -->
+    <dimen name="all_title_height">55dp</dimen>
+    <!-- 所有title栏后退按钮的宽度 -->
+    <dimen name="all_title_back_width">50dp</dimen>
+    
+    <!-- 定位按钮宽度和高度 -->
+    <dimen name="map_btn_get_location_width">50dp</dimen>
+    <dimen name="map_btn_get_location_height">50dp</dimen>
+</resources>

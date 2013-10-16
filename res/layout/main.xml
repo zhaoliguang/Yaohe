@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >  
+    <LinearLayout 
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:padding="5dp"
+    android:orientation="vertical">
+  
+    <RelativeLayout  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        
+        android:orientation="vertical" >  
+        <!-- ViewPager是一个控件 -->  
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="160dp" >
+              
+        </android.support.v4.view.ViewPager>  
+        <LinearLayout  
+            android:id="@+id/viewGroup"  
+            android:layout_below="@id/viewPager"  
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:layout_marginTop="-25px"  
+            android:gravity="right"  
+            android:orientation="horizontal" >  
+        </LinearLayout>  
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ivTruck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:onClick="truckClick"
+            android:src="@drawable/main_truck" />
+
+        <ImageView
+            android:id="@+id/ivExpress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+            android:layout_below="@+id/ivTruck"
+            android:onClick="expressClick"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/main_express" />
+
+        <ImageView
+            android:id="@+id/ivUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivExpress"
+            android:layout_alignParentRight="true"
+            android:onClick="userClick"
+            android:layout_alignTop="@+id/ivExpress"
+            android:src="@drawable/main_user" />
+
+        <ImageView
+            android:id="@+id/ivAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_toRightOf="@+id/ivExpress"
+             android:layout_below="@+id/ivUser"
+             android:onClick="aboutClick"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/main_about" />
+        
+    </RelativeLayout>
+    </LinearLayout>
+  
+</ScrollView> 

@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".CustomerMapActivity" >
+
+    <LinearLayout
+        android:id="@+id/popup_map_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/icon_back_map_popup_text"
+        android:paddingLeft="15dp"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp">
+
+       <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名:"
+            android:layout_marginLeft="1dp"
+            android:textColor="#26AFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/popup_express_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三"
+            android:layout_marginLeft="3dp"
+            android:textColor="#26AFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话:"
+            android:layout_marginLeft="10dp"
+            android:textColor="#26AFFF"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/popup_express_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1234568974"
+            android:layout_marginLeft="3dp"
+            android:textColor="#26AFFF"
+            android:textSize="16sp" />
+        
+       
+    </LinearLayout>
+
+</RelativeLayout>

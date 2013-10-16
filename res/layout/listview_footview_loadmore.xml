@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context=".CustomerMapActivity" >
+
+    <ImageView
+        android:id="@+id/truck_list_listview_footview_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/icon_list_more"
+        android:padding="30dp"
+        android:textSize="23sp" />
+    
+    
+</RelativeLayout>

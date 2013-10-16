@@ -1,0 +1,83 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:2923), pid=4384, tid=4280
+#  Error: ShouldNotReachHere()
+#
+# Java VM: Java HotSpot(TM) Client VM (11.0-b15 mixed mode windows-x86)
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x011e9400):  JavaThread "Unknown thread" [_thread_in_vm, id=4280, stack(0x00370000,0x003c0000)]
+
+Stack: [0x00370000,0x003c0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x011e9400 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=4280, stack(0x00370000,0x003c0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	D:\Program Files\Java\jre6\bin\javaw.exe
+0x77040000 - 0x771a8000 	D:\windows\SYSTEM32\ntdll.dll
+0x75180000 - 0x75278000 	D:\windows\system32\KERNEL32.DLL
+0x746c0000 - 0x7477d000 	D:\windows\system32\KERNELBASE.dll
+0x74b80000 - 0x74c2e000 	D:\windows\system32\ADVAPI32.dll
+0x74e10000 - 0x74f31000 	D:\windows\system32\USER32.dll
+0x74f40000 - 0x74ff1000 	D:\windows\system32\msvcrt.dll
+0x74c30000 - 0x74c64000 	D:\windows\SYSTEM32\sechost.dll
+0x76f60000 - 0x77032000 	D:\windows\system32\RPCRT4.dll
+0x76ac0000 - 0x76bca000 	D:\windows\system32\GDI32.dll
+0x75150000 - 0x7517b000 	D:\windows\system32\IMM32.DLL
+0x76990000 - 0x76a6d000 	D:\windows\system32\MSCTF.dll
+0x7c340000 - 0x7c396000 	D:\Program Files\Java\jre6\bin\msvcr71.dll
+0x6d800000 - 0x6da56000 	D:\Program Files\Java\jre6\bin\client\jvm.dll
+0x70dd0000 - 0x70df1000 	D:\windows\SYSTEM32\WINMM.dll
+0x70da0000 - 0x70dca000 	D:\windows\SYSTEM32\WINMMBASE.dll
+0x6f5b0000 - 0x6f657000 	D:\windows\system32\apphelp.dll
+0x6d280000 - 0x6d288000 	D:\Program Files\Java\jre6\bin\hpi.dll
+0x75140000 - 0x75146000 	D:\windows\system32\PSAPI.DLL
+0x6d7b0000 - 0x6d7bc000 	D:\Program Files\Java\jre6\bin\verify.dll
+0x6d320000 - 0x6d33f000 	D:\Program Files\Java\jre6\bin\java.dll
+0x6d7f0000 - 0x6d7ff000 	D:\Program Files\Java\jre6\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:D:\Program Files\android\android-sdk-windows\platforms\android-17\android.jar 
+java_command: linpeng.app.util.Text
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\Program Files\Java\jdk1.6.0_10
+CLASSPATH=.;D:\Program Files\Java\jdk1.6.0_10\lib\dt.jar;D:\Program Files\Java\jdk1.6.0_10\lib\tools.jar;F:\ÖØÒª\³ÌÐò\servlet\apache-tomcat-5.5.27\common\lib\servlet-api.jar;
+PATH=D:/Program Files/Java/jre6/bin/client;D:/Program Files/Java/jre6/bin;D:/Program Files/Java/jre6/lib/i386;D:\windows\system32;D:\windows;D:\windows\System32\Wbem;D:\windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\Java\jdk1.6.0_10\bin;D:\Program Files\Java\jdk1.6.0_10\jre\bin;.;ANDROID_SDK_HOME\platform-tools;ANDROID_SDK_HOME\tools;D:\Program Files\MATLAB\MATLAB Compiler Runtime\v710\runtime\win32;D:\Program Files\Windows Kits\8.0\Windows Performance Toolkit\;D:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\Program Files\Microsoft SQL Server\80\Tools\Binn\;D:\Program Files\Microsoft SQL Server\90\Tools\binn\;D:\Program Files\Microsoft SQL Server\90\DTS\Binn\;D:\Program Files\Microsoft SQL Server\90\Tools\Binn\VSShell\Common7\IDE\;D:\Program Files\Microsoft Visual Studio 8\Common7\IDE\PrivateAssemblies\;E:\androids\adt-bundle-windows-x86-20130219\adt-bundle-windows-x86-20130219\sdk\tools;D:\Program Files\Microsoft Visual Studio\Common\Tools\WinNT;D:\Program Files\Microsoft Visual Studio\Common\MSDev98\Bin;D:\Program Files\Microsoft Visual Studio\Common\Tools;D:\Program Files\Microsoft Visual Studio\VC98\bin;C:\GNUstep\GNUstep\System\Tools;C:\GNUstep\bin;D:\Program Files\eclipse;
+USERNAME=lp
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 16 Model 6 Stepping 2, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows NT 6.2 Build 9200 
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 16 model 6 stepping 2, cmov, cx8, fxsr, mmx, sse, sse2, sse3, mmxext, 3dnow, 3dnowext
+
+Memory: 4k page, physical 2093260k(360384k free), swap 3993804k(1422576k free)
+
+vm_info: Java HotSpot(TM) Client VM (11.0-b15) for windows-x86 JRE (1.6.0_10-b33), built on Sep 26 2008 01:00:43 by "java_re" with MS VC++ 7.1
+
+time: Mon Jul 22 21:13:27 2013
+elapsed time: 0 seconds
+

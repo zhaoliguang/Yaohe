@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    tools:context=".CustomerMapActivity" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/customer_map_relative1"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/mapview_btn_mylocation"
+        android:layout_width="@dimen/map_btn_get_location_width"
+        android:layout_height="@dimen/map_btn_get_location_height"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/customer_map_relative1"
+        android:layout_marginRight="10dp" 
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mylocationbutton"
+        android:onClick="getMyLocation" />
+
+   <!--  <LinearLayout
+        android:id="@+id/customer_map_bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/icon_back_bottom"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/mapview_btn_buttom1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.25"
+            android:background="#00000000"
+            android:onClick="getMsg"
+            android:src="@drawable/btn_bottom1" />
+
+        <ImageButton
+            android:id="@+id/mapview_btn_buttom2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.25"
+            android:background="#00000000"
+            android:src="@drawable/btn_bottom2" />
+
+        <ImageButton
+            android:id="@+id/mapview_btn_buttom3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.25"
+            android:background="#00000000"
+            android:src="@drawable/btn_bottom3" />
+
+        <ImageButton
+            android:id="@+id/mapview_btn_buttom4"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.25"
+            android:background="#00000000"
+            android:src="@drawable/btn_bottom4" />
+    </LinearLayout> -->
+
+    <RelativeLayout
+        android:id="@+id/customer_map_relative1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/all_title_height"
+         android:background="#333333"
+        android:layout_alignParentTop="true" >
+
+        <Button
+            android:layout_width="@dimen/all_title_back_width"
+            android:layout_height="@dimen/all_title_height"
+            android:id="@+id/customer_map_btn_list"
+            android:layout_centerVertical="true"
+            android:background="@drawable/list_button"
+            android:onClick="TruckExpressList"
+            android:textSize="14sp" />
+
+  
+      
+          <TextView
+            android:layout_width="fill_parent"
+            android:gravity="center"
+           
+            android:layout_height="@dimen/all_title_height"
+            android:layout_toRightOf="@+id/customer_map_btn_list"
+            android:text="地图"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            />
+      
+    </RelativeLayout>
+
+</RelativeLayout>

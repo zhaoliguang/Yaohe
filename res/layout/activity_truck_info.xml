@@ -1,0 +1,237 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDAC4"
+    tools:context=".TruckInfoActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/all_title_height"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/truck_relative1"
+            android:layout_width="fill_parent"
+              android:background="#333333"
+            android:layout_height="@dimen/all_title_height"
+            android:focusableInTouchMode="true" >
+
+            <Button
+                android:id="@+id/truck_details_btn_back"
+                android:layout_width="@dimen/all_title_back_width"
+                android:layout_height="@dimen/all_title_height"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back"
+                android:onClick="back"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+              <TextView
+                android:layout_width="fill_parent"
+                android:layout_toRightOf="@+id/truck_details_btn_back"
+                 android:layout_height="@dimen/all_title_height"
+                 android:gravity="center"
+          		  android:text="卡车信息填写"
+           		 android:textSize="25sp"
+           	 	android:textColor="#ffffff"
+              />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_listview"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/truck_textview_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请输入您的姓名："
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/truck_edittext_name"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/select_common_edt"
+                android:ems="10"
+                android:hint="姓名" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_listview"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/truck_textview_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请输入您的卡车核载重量："
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/truck_edittext_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/select_common_edt"
+                android:ems="4"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_listview"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/truck_textview_length_width"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请输入您卡车的车厢长度和宽度："
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/truck_linear1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/truck_textview_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="长度："
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/truck_edittext_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/select_common_edt"
+                    android:ems="3"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/truck_textview_width"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="6dp"
+                    android:text="宽度："
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/truck_edittext_width"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/select_common_edt"
+                    android:ems="3"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_listview"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/truck_textview_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号码:"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/truck_edittext_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/select_common_edt"
+                android:ems="15"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_listview"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/truck_textview_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="备注信息:"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/truck_edittext_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/select_common_edt"
+                android:hint="备注信息"
+                android:ems="20"
+                android:gravity="top"
+                android:lines="4"
+                android:maxLines="10"
+                android:scrollbars="vertical" >
+            </EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/truck_btn_ok"
+            android:layout_width="200dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/select_btn_truck_post"
+            android:onClick="post"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</ScrollView>

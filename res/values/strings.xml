@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">吆喝</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_truck">TruckActivity</string>
+
+    <string-array name="truck_weight">
+        <item>微型卡车(载重量在1吨以下)</item>
+        <item>轻型卡车(载重量在1-3.5吨)</item>
+        <item>中型卡车(载重量在4-8吨)</item>
+        <item>重型卡车(载重量在8吨以上)</item>
+    </string-array>
+    <string-array name="get_truck_type">
+        <item>附近</item>
+        <item>县区</item>
+    </string-array>
+
+    <string name="title_activity_truck_is_loaded">TruckIsLoadedActivity</string>
+    <string name="title_activity_customer_map">CustomerMapActivity</string>
+    <string name="title_activity_get_truck_by_type">GetTruckByTypeActivity</string>
+    <string name="title_activity_truck_details">TruckDetailsActivity</string>
+
+</resources>
